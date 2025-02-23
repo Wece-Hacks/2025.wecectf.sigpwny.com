@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge": {"name": "Caesar Pie", "category": "Cryptography", "id": 1, "value": 500}, "date": "2025-02-23T17:20:21.912282+00:00", "user": {"name": "guzalrus", "id": 10}, "team": {"name": "coderellas", "id": 4}, "type": "correct", "challenge_id": 1, "id": 151}], "meta": {"count": 1}}

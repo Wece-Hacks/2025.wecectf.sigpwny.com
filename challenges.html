@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WECE Hacks CTF</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/files/d642ad18cd8d1cb8e7d78926a5f0617b/WECELOGO.png" type="image/x-icon">
+
+  
+
+  
+    <link rel="stylesheet" href="/themes/sigpwny-core-beta/static/assets/main.431d3932.css">
+  
+
+  
+
+  <script  src="/themes/sigpwny-core-beta/static/assets/color_mode_switcher.52334129.js"></script>
+
+  <script type="text/javascript">
+      window.init = {
+          'urlRoot': "",
+          'csrfNonce': "5a3da8c9005563265c40e0e85afb0779b68887ec73f9afaddbcc976d2008f588",
+          'userMode': "teams",
+          'userId': 0,
+          'userName': null,
+          'userEmail': null,
+          'teamId': null,
+          'teamName': null,
+          'start': 1740328500,
+          'end': 1740337200,
+          'topCategory': null,
+          'themeSettings': {"category_tabs": "function tabs(categories) {\r\n  return [\r\n    {\u0027name\u0027: \u0027Meetings\u0027, categories: categories}\r\n  ]\r\n}", "challenge_category_order": "", "challenge_order": "", "challenge_window_size": "xl", "use_builtin_code_highlighter": true},
+          'eventSounds': [
+            "/themes/core/static/sounds/notification.webm",
+            "/themes/core/static/sounds/notification.mp3",
+          ],
+      }
+  </script>
+
+  <style id="theme-color">
+:root {--theme-color: #cac4f8;}
+.navbar{background-color: var(--theme-color) !important; --bs-navbar-color: rgb(0, 0, 0, .75); --bs-navbar-hover-color: rgb(0, 0, 0, 1); --bs-navbar-disabled-color: rgb(0, 0, 0, .55); }
+.jumbotron{background-color: var(--theme-color) !important;}
+#tab_wrapper > nav > div > a{display: none} /* hack. tabs button only auto selects if its called "Meetings", so i just hide it */
+.category-sidebar {overflow-y: auto !important;} /* hack, don't like scrollbar for so few elements. */
+</style>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a href="/" class="navbar-brand">
+      
+        <img
+            class="img-responsive ctf_logo"
+            src="/files/6ac8bbce0df2ffbaacd5d88a9a63fe9e/Captura_de_pantalla_2025-02-21_195943.png"
+            alt="WECE Hacks CTF"
+            height="25"
+        >
+      
+    </a>
+
+    <button
+        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#base-navbars"
+        aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="base-navbars">
+      <ul class="navbar-nav me-auto">
+        
+
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/users">
+              Users
+            </a>
+          </li>
+
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/teams">
+                Teams
+              </a>
+            </li>
+          
+        
+
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/scoreboard">
+              Scoreboard
+            </a>
+          </li>
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/challenges">
+            Challenges
+          </a>
+        </li>
+      </ul>
+
+      <hr class="d-sm-flex d-md-flex d-lg-none">
+
+      <ul class="navbar-nav ms-md-auto d-block d-sm-flex d-md-flex">
+        
+
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/register">
+                <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Register">
+                  <i class="fas fa-user-plus d-none d-md-inline d-lg-none"></i>
+                </span>
+                <span class="d-sm-inline d-md-none d-lg-inline">
+                  <i class="fas fa-user-plus pe-1"></i>
+                  Register
+                </span>
+              </a>
+            </li>
+          
+
+          <li class="nav-item">
+            <a class="nav-link" href="/login">
+              <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Login">
+                <i class="fas fa-sign-in-alt d-none d-md-inline d-lg-none"></i>
+              </span>
+              <span class="d-sm-inline d-md-none d-lg-inline">
+                <i class="fas fa-sign-in-alt pe-1"></i>
+                Login
+              </span>
+            </a>
+          </li>
+        
+        <li class="nav-item">
+          <button class="nav-link theme-switch" type="button">
+            <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Toggle theme">
+              <i class="fas fa-sun d-none d-md-inline"></i>
+            </span>
+            <span class="d-sm-inline d-md-none">
+              <i class="fas fa-sun pe-1"></i>
+              Toggle theme
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main role="main">
+  
+  <div class="jumbotron">
+    <div class="container">
+      <h1>
+        Challenges
+      </h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div>
+  
+    <div class="alert alert-info alert-dismissible text-center" role="alert">
+      <span>WECE Hacks CTF has ended</span>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+  
+
+  
+</div>
+      </div>
+    </div>
+
+    <div 
+      x-data="ChallengeBoard" 
+      @load-challenges.window="loadChallenges()" 
+      @load-challenge.window="loadChallenge($event.detail)"
+    >
+      <div
+          x-ref="challengeWindow" id="challenge-window" class="modal fade" tabindex="-1" role="dialog" x-data=""
+          x-html="$store.challenge.data.view"
+      ></div>
+
+      <div x-show="!loaded">
+        <div class="min-vh-50 d-flex align-items-center">
+          <div class="text-center w-100">
+            <i class="fas fa-circle-notch fa-spin fa-3x fa-fw spinner"></i>
+          </div>
+        </div>
+      </div>
+
+      <div x-show="loaded">
+        <div x-data="{ tab: window.location.hash ? decodeURI(window.location.hash.substring(1).split('/')[0]) : 'Meetings' }" id="tab_wrapper">
+          <!-- The tabs navigation -->
+          <nav class="d-flex flex-row justify-content-start">
+            <template x-for="(tabDetails, idx) in getTabs()" :key="idx">
+              <div class="px-3">
+                <a :class="{ 'btn btn-outline-secondary active': tab === tabDetails.name, 'btn btn-outline-secondary': tab !== tabDetails.name }" @click.prevent="tab = tabDetails.name; window.location.hash = tabDetails.name" href="#" x-text="tabDetails.name"></a>
+              </div>
+            </template>
+          </nav>
+        
+          <!-- The tabs content -->
+          <template x-for="(tabDetails, idx) in getTabs()">
+            <div x-show="tab === tabDetails.name" class="row">
+              <!-- The left sidebar for the tab -->
+              <div class="pt-5 d-none d-md-block col-3 sticky-top category-sidebar">
+                <template x-for="(category, idx) in tabDetails.categories" :key="idx">
+                  <div class="category-header pb-2 mr-5">
+                    <a x-text="category" :href="`#${tabDetails.name}/${category}`"></a>
+                  </div>
+                </template>
+              </div>
+              <!-- The main content of the tab -->
+              <div class="col-9">
+                <template x-for="(category, idx) in tabDetails.categories" class="category-content" :key="idx">
+                  <div class="pt-5" :id="`${tabDetails.name}/${category}`">
+                    <div class="category-header mb-3">
+                      <h3 x-text="category"></h3>
+                    </div>
+                    
+                    <div class="category-challenges d-flex flex-column">
+                      <div class="challenges-row row">
+                        <template x-for="(c, idx) in getChallenges(category)" :key="c.id">
+                          <div class="col-sm-6 col-md-4 col-lg-3">
+                            <button
+                            class="challenge-button btn btn-dark w-100 text-truncate my-3"
+                            :class="c.solved_by_me ? 'challenge-solved' : ''"
+                            :value="c.id" @click="loadChallenge(c.id, tabDetails)"
+                            >
+                            
+                            <div class="challenge-inner my-3">
+                              <p x-text="c.name"></p>
+                              <span x-text="c.value"></span>
+                            </div>
+                          </button>
+                        </div>
+                      </template>
+                      </div>
+                    </div>
+                  </div>
+                </template>
+              </div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="container text-center">
+    <a href="https://ctfd.io" class="text-secondary">
+      <small class="text-muted">
+        Powered by CTFd
+      </small>
+    </a>
+  </div>
+</footer>
+
+<div x-data>
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div x-ref="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto" x-text="$store.toast.title"></strong>
+        <small>just now</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body" x-html="$store.toast.html">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div x-data>
+  <div class="modal fade" x-ref="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" x-text="$store.modal.title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p x-html="$store.modal.html"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script type="module"  src="/themes/sigpwny-core-beta/static/assets/index.7e48942e.js"></script><script type="module"  src="/themes/sigpwny-core-beta/static/assets/challenges.3214b3e4.js"></script>
+
+
+
+
+
+</body>
+</html>
